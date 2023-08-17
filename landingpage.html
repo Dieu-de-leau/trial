@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> I am Groot</title>
+        <style type="text/css">
+            *{padding: 0; margin: 0;  box-sizing: border-box;}
+            header {
+                width: 100%;
+                height: 100vh;
+                background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url('grootbg.jpeg');
+                background-size: cover;
+                font-family: sans-serif;
+            }
+            nav{
+                width: 100%;
+                height: 100px;
+                color: #228B22;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .logo{
+                font-size: 2em;
+                letter-spacing: 2px;
+            }
+            .menu a{
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+                font-size: 20px;
+                position: relative;
+            }
+            .menu a:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                border-bottom: 2px solid #228B22;
+                transition: 0.4s linear;
+            }
+            .menu a:hover:before{
+                width: 90%;
+            }
+            .register a{
+                text-decoration: none;
+                color: #a0522d;
+                padding: 10px 20px;
+                font-size: 20px;
+                background: whitesmoke;
+                border-radius: 8px;
+                transition: 0.4s;
+            }
+            .register a:hover{
+                background: transparent;
+                border: 1px solid #765338;
+            }
+            .h-text{
+                max-width: 650px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color:antiquewhite;
+                text-align:center;
+            }
+            .h-text span{
+                letter-spacing: 5px;
+            }
+            .h-text h1{
+                font-size: 3.5em;
+            }
+            .h-text a{
+                text-decoration: none;
+                background-color: transparent;
+                color: whitesmoke;
+                padding: 10px 20px;
+                letter-spacing: 5px;
+                transition: 0.4s;
+            }
+            .h-text a:hover{
+                background: transparent;
+                border: 2px solid #765338;
+            }
+            .s1{
+                background-image: url('pond.jpeg');
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                font-family: sans-serif;
+            }
+            .s2{
+                background-image: url('angrygroot.jpeg');
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                font-family: sans-serif;
+            }.s3{
+                background-image: url('teen.jpeg');
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                font-family: sans-serif;
+            }.s4{
+                background-image: url('adult.jpeg');
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                font-family: sans-serif;
+            }
+            p, .heading{
+                margin-top: 0px;
+                padding-top: 60px;
+                padding-left: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">I am Groot</div>
+                <div class="menu">
+                    <a href="#1">I am groot</a>
+                    <a href="#2">I am groot</a>
+                    <a href="#3">I am groot</a>
+                    <a href="#4">I am groot</a>
+                </div>
+                <div class="register">
+                    <a href="#">I am Groot</a>
+                </div>
+            </nav>
+            <section class="h-text">
+                <span>i am groot</span>
+                <h1>I am groot</h1>
+                <br>
+                <a href="#">I am Groot</a>
+            </section>
+        </header>
+        <section class="s1">
+            <h2 class="heading" id="1"><span>I am Groot</span></h2>
+            <p>I am groot</p>
+        </section>
+        <section class="s2">
+            <h2  id="2"></h2>
+        </section>
+        <section class="s3">
+            <h2 class="heading" id="3">I am Groot</h2>
+            <p>I am groot</p>
+        </section>
+        <section class="s4" id="4">
+        </section>
+        
+    </body>
+</html>
